@@ -4,7 +4,7 @@ console.log('mainjs is connected!')
 // I'll do some of the work for you, first I will grab the <body></body>
 var body = document.body
 
-// 1. Can you create a <div> with the class "duck" and name it "duck"
+// 1. Can you create a <div> with the class "duck" and store it in the variable "duck"
 
 
 // 2. Next, use setInterval to toggle the "flap" class on the duck every 250 ms (1/4 second)
