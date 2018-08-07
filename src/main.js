@@ -5,15 +5,30 @@ console.log('mainjs is connected!')
 var body = document.body
 
 // 1. Can you create a <div> with the class "duck" and store it in the variable "duck"
+var duck = document.createElement('div');
+duck.classList.add('duck');
 
+document.body.appendChild(duck);
 
 // 2. Next, use setInterval to toggle the "flap" class on the duck every 250 ms (1/4 second)
-
+function flapper() {
+    duck.classList.toggle('flap');
+}
+setInterval(flapper,250);
 
 // 3. Fantastic!  Now, let's move the duck using CSS "top" and "left"
-
+duck.style.top = "50%";
+duck.style.left = "50%";
 
 // 4. Try making the duck move to a different location after 1 second
+function moveDuck() {
+    var offsetx = Math.random()*50;
+    var offsety = Math.random()*50;
+    duck.style.top = offsety + "%";
+    duck.style.left = offsetx + "%";
+    console.log("moved duck")
+}
+setInterval(moveDuck,1000)
 
 // 5. Yay!!
 
@@ -21,7 +36,7 @@ var body = document.body
 
 // 6. Things are getting a bit messy. Let's create
 //    a function called createDuck() that does everything in 1-4
-
+function createDuck
 
 // 7. Now, let's create lots of ducks!  Use a "for" loop to create 5 ducks
 //    using our fancy new createDuck() function
