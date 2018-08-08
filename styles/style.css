@@ -22,6 +22,10 @@ body, html {
   transition: top 1s, left 1s;
 }
 
+.duck.shot {
+  background-image: url(https://media.git.generalassemb.ly/user/4451/files/7b16293e-99ab-11e8-917b-6ce8fd638785);
+}
+
 .duck.right       { background-position: -200px -160px; }
 .duck.right.flap  { background-position: -300px -160px; }
 .duck             { background-position: -100px -160px; }

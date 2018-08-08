@@ -52,11 +52,10 @@ function createDuck() {
 
     function duckDown() {
         duck.classList.add("shot")
-        //TODO: remove the duck from DOM
-        document.body.removeChild(duck);
+        //removed the duck from DOM
+        setTimeout(function(){document.body.removeChild(duck);},1000);
     }
     duck.addEventListener('click', duckDown);
-
 
     function moveDuck() {
         var x = Math.floor(Math.random()*window.innerWidth);
@@ -66,7 +65,6 @@ function createDuck() {
         console.log("moved duck")
     }
     setInterval(moveDuck,1000)
-
 
 }
 
